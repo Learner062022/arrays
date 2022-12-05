@@ -34,7 +34,6 @@ namespace DylanDeSouzaWk6ExB
                 {
                     txtPrice.Text = dblPrices[counter].ToString("C");
                     bool_magazine_found = true;
-
                 }    
             }
             if (!bool_magazine_found)
