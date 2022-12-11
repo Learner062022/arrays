@@ -22,18 +22,18 @@ namespace DylanDeSouzaWk6ExA
         private void btnArrayMemberOrder_Click(object sender, EventArgs e)
         {
             lstAustralianStates.Items.Clear();
-            for (int intmembers = 0; intmembers < strStates.Length; intmembers++)
+            foreach (string str_state in str_states)
             {
-                lstAustralianStates.Items.Add(strStates[intmembers]);
+                lstAustralianStates.Items.Add(str_state);
             }
         }
 
         private void btnReverseOrder_Click(object sender, EventArgs e)
         {
             lstAustralianStates.Items.Clear();
-            for (int intmembers = strStates.Length - 1; intmembers >= 0; intmembers--)
+            for (int intmembers = str_states.Length - 1; intmembers >= 0; intmembers--)
             {
-                lstAustralianStates.Items.Add(strStates[intmembers]);
+                lstAustralianStates.Items.Add(str_states[intmembers]);
             }
         }
 
