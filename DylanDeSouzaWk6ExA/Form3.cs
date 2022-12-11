@@ -36,10 +36,5 @@ namespace DylanDeSouzaWk6ExA
                 lstAustralianStates.Items.Add(str_states[intmembers]);
             }
         }
-
-        private void lstAustralianStates_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
