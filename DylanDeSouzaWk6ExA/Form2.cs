@@ -15,19 +15,15 @@ namespace DylanDeSouzaWk6ExA
         public Form2()
         {
             InitializeComponent();
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            
+            lstAustralianStates.Items.Add("Australian States:");
         }
 
         private void btnClick_Click(object sender, EventArgs e)
         {
-            string[] strStates = { "WA", "NT", "QLD", "NSW", "SA", "VIC" };
-            for (uint uintmembers = 0U; uintmembers < strStates.Length; uintmembers++)
+            string[] str_states = { "WA", "NT", "QLD", "NSW", "SA", "VIC" };
+            foreach (string str_state in str_states)
             {
-                lstAustralianStates.Items.Add(strStates[uintmembers]);
+                lstAustralianStates.Items.Add(str_state);
             }
         }
     }
